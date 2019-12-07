@@ -1,17 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Splash />
+    <Manifesto />
+    <SocialProof />
+    <TeaserContent />
+    <Testimonial />
+    <Cta />
+    <About />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import About from './components/about';
+import Cta from './components/cta';
+import Manifesto from './components/manifesto';
+import SocialProof from './components/socialProof';
+import Splash from './components/splash';
+import TeaserContent from './components/teaserContent';
+import Testimonial from './components/testimonial';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    TeaserContent,
+    Splash,
+    SocialProof,
+    Manifesto,
+    Testimonial,
+    Cta,
+    About,
   }
 }
 </script>
